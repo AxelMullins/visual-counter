@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('./assets/font/avenir_ff/AvenirLTStd-Book.otf') format('woff2');
+  /* Puedes agregar más formatos según sea necesario (e.g., woff, ttf, etc.) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Avenir";
+}
+
+a.active img{
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+/* Accordion */
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-header button{
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #000 !important;
+}
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+}
+.nav-link {
+  color: #929292  !important;
+  padding: 3px 0px 3px 30px !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #000  !important;
+  background-color: transparent !important;
+  font-weight: 900;
+}
+
+/* Konva Js */
+.konvajs-content {
+  margin: auto !important;
+  background-color: #d1d1d1;
+}
