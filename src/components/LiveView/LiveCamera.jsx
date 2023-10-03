@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import DrawingCanvas from "./DrawingCanvas ";
 import axios from "axios";
+
 const LiveCamera = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);

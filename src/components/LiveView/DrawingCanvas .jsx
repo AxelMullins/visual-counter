@@ -3,7 +3,7 @@ import { Stage, Layer, Line, Image } from "react-konva";
 import liveImg from "../../assets/img/live-view-img.png";
 import DeviceConfiguration from "./DeviceConfiguration";
 
-const DrawingCanvas = () => {
+const DrawingCanvas = ({ data, isLoading, errMsg }) => {
   const [image, setImage] = useState(null);
   const [lines, setLines] = useState([]);
   const [containerWidth, setContainerWidth] = useState(500);
@@ -70,7 +70,7 @@ const DrawingCanvas = () => {
           height: containerHeight,
           overflow: "hidden",
           cursor: isDrawingEnabled && "crosshair",
-          background: "#d1d1d1"
+          background: "#d1d1d1",
         }}
       >
         <Stage
